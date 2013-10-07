@@ -25,9 +25,9 @@
     
 * Una vez creados los subgrupos, asignamos los procesos a los a estos subgrupos últimos que hemos creado con el comando cgexec
 
-  1. Cgexec –g memory,cpu,cpuacct:ejer/navg firefox
-  2. Cgexec –g memory,cpu,cpuacct:ejer/wri  kate
-  3. Cgexec –g memory,cpu,cpuacct:ejer/othr 
+    1. Cgexec –g memory,cpu,cpuacct:ejer/navg firefox
+    2. Cgexec –g memory,cpu,cpuacct:ejer/wri kate
+    3. Cgexec –g memory,cpu,cpuacct:ejer/othr bash
 
 Para analizar comprobamos los siguientes archivos:
 
