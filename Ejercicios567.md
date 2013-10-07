@@ -19,15 +19,15 @@
 * Primero creamos los grupos de con el comando, cgcreate –a rafa –g memory,cpu,cpuacct:ejer
 * Después creamos 3 subdirectorios diferentes para gestionar un navegador, un editor de texto y un proceso cualquiera.
 
-    Cgcreate –g memory,cpu,cpuacct:ejer/navg
-    Cgcreate –g memory,cpu,cpuacct:ejer/wri
-    Cgcreate –g memory,cpu,cpuacct:ejer/othr
+    1. Cgcreate –g memory,cpu,cpuacct:ejer/navg
+    2. Cgcreate –g memory,cpu,cpuacct:ejer/wri
+    3. Cgcreate –g memory,cpu,cpuacct:ejer/othr
     
 * Una vez creados los subgrupos, asignamos los procesos a los a estos subgrupos últimos que hemos creado con el comando cgexec
 
-  Cgexec –g memory,cpu,cpuacct:ejer/navg firefox
-  Cgexec –g memory,cpu,cpuacct:ejer/wri  kate
-  Cgexec –g memory,cpu,cpuacct:ejer/othr 
+  1. Cgexec –g memory,cpu,cpuacct:ejer/navg firefox
+  2. Cgexec –g memory,cpu,cpuacct:ejer/wri  kate
+  3. Cgexec –g memory,cpu,cpuacct:ejer/othr 
 
 Para analizar comprobamos los siguientes archivos:
 
