@@ -13,7 +13,7 @@ Antes creamos el grupo “usuario”: sudo cgcreate –g memory,cpu,cpuacct:usua
 
 Para que los procesos del usuario del sistema se vean afectados por esta medida, tenemos que modificar el archivo /etc/cgrules.conf. Añadimos el nombre del usuario, el tipo de control y su grupo.
 
-[[https://github.com/rafacruiz/IV/blob/master/foto1.jpg]]
+[Captura](https://github.com/rafacruiz/IV/blob/master/foto1.jpg)
 
 3. Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema). 
 
@@ -34,7 +34,7 @@ Al ejecutar el comando egrep '^flags.*(vmx|svm)' /proc/cpuinfo, no devuelve nada
 Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
 Al igual que en el ejercicio anterior me indica que el cpu no soporta la extensión KVM, también puede estar motivado al utilizar maquina virtual.
 
-[KVM](https://github.com/rafacruiz/IV/blob/master/foto2.jpg)
+[Captura KVM](https://github.com/rafacruiz/IV/blob/master/foto2.jpg)
 
 ##Ejercicio11
 Comentar diferentes soluciones de Software as a Service de uso habitual.
@@ -55,7 +55,7 @@ El entorno virtual que instale fue Spyder para el lenguaje de programación Pyth
 
 Pero para este ejercicio instalamos un entorno virtualizado de los cuales se indican, como es virtualenv para el lenguaje de programación python.
 
-[Spyder](https://github.com/rafacruiz/IV/blob/master/foto3.jpg)
+[Captura Spyder](https://github.com/rafacruiz/IV/blob/master/foto3.jpg)
  
  * Para su instalación seguimos los pasos de http://www.virtualenv.org/en/latest/
    pip install virtualenv
