@@ -49,4 +49,4 @@ Proceso Edit
 * Cpuacct.usage_percpu = 3913849960
 * Memory.max-usage-in-bytes = 6938624
 
-[https://github.com/rafacruiz/GII-2013/wiki/Ejercicios89101112.md # ejercicios 8,9,10,11,12]
+[ejercicios 8,9,10,11,12](https://github.com/rafacruiz/GII-2013/blob/master/Ejercicio8-11.md)
