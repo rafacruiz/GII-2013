@@ -26,3 +26,24 @@ Para comenzar realizamos este primer paso tenemos que tener instalado Python, Vi
 		  “$ virtualenv venv –distribute”
 		  “$ source venv/bin/activate”
 
+	* A continuación instalamos las dependencias de nuestra aplicación con pip. En este caso instalamos Flask el framework web y Gunicorn como servidor web.
+
+		“$ pip install Flask gunicorn”
+
+	* Una vez que tenemos todo estos pasos, desarrollamos nuestro proyecto en Python. Para ejecutar nuestro proyecto tenemos que utilizar un archivo ProcFile que debe estar en el directorio raiz con la siguiente linea:
+		
+		“web: gunicorn pro:app”
+
+	* Iniciamos los servicios en nuestro ProcFile local:
+	
+		“$ foreman start”
+
+	* Para que Heroku reconozca las aplicaciones Python necesitamos un arhivo con el nombre requirements.txt que debe estar en directorio raiz del proyecto con las siguientes lineas:
+	
+		“$ pip freeze > requirements.txt”
+	
+			Flask==0.9
+			Jinja2==2.6
+			Werkzeug==0.8.3
+			gunicorn==0.17.2
+
