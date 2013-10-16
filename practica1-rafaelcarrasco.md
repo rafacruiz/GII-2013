@@ -53,7 +53,7 @@ con el nombre requirements.txt que debe estar en directorio raiz del proyecto co
 
 * Una vez realizados todos los pasos anteriores, creamos el repositorio con git:
 		  
-		  “$ git init”
+		  "$ git init”
 	          “$ git add .”
 	          “$ git commit -m "init"”
 	
@@ -66,5 +66,5 @@ Para poder visitar la aplicación, lo podremos realizar desde este link:
 	
 	http://young-bastion-6671.herokuapp.com/
 	
-	[Pratica1](https://github.com/rafacruiz/IV/blob/master/f.png)
+[Captura Pratica1](https://github.com/rafacruiz/IV/blob/master/f.png)
 
