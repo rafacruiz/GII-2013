@@ -30,11 +30,19 @@ Más info: http://ark.intel.com/es-es/products/35568/Intel-Core2-Duo-Processor-P
 
 Al ejecutar el comando egrep '^flags.*(vmx|svm)' /proc/cpuinfo, no devuelve nada indicando que si contiene virtualización de intel. Este resultado puede ser motivo de estar utilizando actualmente una maquina virtual, mientras preparo el pc para instalar Ubuntu correctamente. Una vez efectuada la instalación volveré a ejecutar el comando para ver el resultado real, ya que en la características del pc su página web oficial indica que si soporta virtualización.
 
+Tras la instalación de Ubuntu, realizo la ejecución del comando y puedo comprobar que mi pc soporta vmx.
+
+[Captura vmx](https://github.com/rafacruiz/IV/blob/master/ejer8.png)
+
 ##Ejercicio10
 Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
 Al igual que en el ejercicio anterior me indica que el cpu no soporta la extensión KVM, también puede estar motivado al utilizar maquina virtual.
 
 [Captura KVM](https://github.com/rafacruiz/IV/blob/master/foto2.jpg)
+
+Realizamos lo mismo para el comando kvm-ok, tras la instalación de Ubuntu comprobamos si el pc lo soporta. Como podemos comprobar en la captura de imagen de más abajo, CPU soporta Kvm.
+
+[Nueva captura Kvm](https://github.com/rafacruiz/IV/blob/master/kvm.png)
 
 ##Ejercicio11
 Comentar diferentes soluciones de Software as a Service de uso habitual.
@@ -43,7 +51,6 @@ http://www.mcafee.com/es/products/saas-total-protection.aspx
 
 Otros ejemplos que usan Saas mucho más conocidos y que utilizamos a diario son
  * Google Docs
- * Dropbox
  * Gmail
 
 http://www.genbetadev.com/programacion-en-la-nube/entendiendo-la-nube-el-significado-de-saas-paas-y-iaas
