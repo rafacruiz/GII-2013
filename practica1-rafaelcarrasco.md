@@ -66,5 +66,5 @@ Para poder visitar la aplicación, lo podremos realizar desde este link:
 	
 	http://young-bastion-6671.herokuapp.com/
 	
-	[Captura Prática 1](https://github.com/rafacruiz/IV/blob/master/f.png)
+	[Pratica1](https://github.com/rafacruiz/IV/blob/master/f.png)
 
