@@ -51,4 +51,20 @@ con el nombre requirements.txt que debe estar en directorio raiz del proyecto co
 			Werkzeug==0.8.3
 			gunicorn==0.17.2
 
+* Una vez realizados todos los pasos anteriores, creamos el repositorio con git:
+		  
+		  “$ git init”
+	          “$ git add .”
+	          “$ git commit -m "init"”
+	
+* Despues creamos nuestro proyecto en Heroku:
+
+	          “$ heroku create” y por ultimo subimos el proyecto con: “$ git push heroku master”
+
+
+Para poder visitar la aplicación, lo podremos realizar desde este link:
+	
+	http://young-bastion-6671.herokuapp.com/
+	
+	[Captura Prática 1](https://github.com/rafacruiz/IV/blob/master/f.png)
 
