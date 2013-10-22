@@ -4,11 +4,11 @@ Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback
 
 * En primer lugar tenemos que creamos un namespace, ejecutamos la siguiente linea:
 
-  "sudo unshare -u /bin/bash"
+    "sudo unshare -u /bin/bash"
   
 * Cambiamos el nombre del equipo en este nuevo namespace:
 
-  "hostname rafa"
+    "hostname rafa"
 
 [Captura namespace](https://github.com/rafacruiz/IV/blob/master/T2Ej1.png)
 
@@ -18,7 +18,7 @@ Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback
   
 * Y realizamos el montaje de la iso:
 
-  "mount -o loop /media/8E1AD7531AD73745/SO/debian-506-i386-kde-CD-1.iso /mnt/disk"
+    "mount -o loop /media/8E1AD7531AD73745/SO/debian-506-i386-kde-CD-1.iso /mnt/disk"
   
 [Captura Montaje ISO](https://github.com/rafacruiz/IV/blob/master/T2Ej1%282%29.png)
 
@@ -37,21 +37,21 @@ comprobar mi pc no contiene puentes configurados.
 
 * En primer lugar creamos el puente:
 
-  "sudo brctl addr rafa"
+    "sudo brctl addr rafa"
 
 * Una vez creado el puente, creamos una nueva interfaz:
 
-  "ip addr show"
+    "ip addr show"
   
 [Captura Interfaz](https://github.com/rafacruiz/IV/blob/master/T2Ej2-1.png)
 
 * Para activar este puente lo añadimos a la interfaz eth0:
 
-  "sudo brctl addif rafa eth0"
+    "sudo brctl addif rafa eth0"
 
 * Ya podemos comprobar que nuestro puente existe en nuestro pc:
 
-  "brctl show"
+    "brctl show"
   
 [Captura Puente existente](https://github.com/rafacruiz/IV/blob/master/T2Ej2-3.png)
 
