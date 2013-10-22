@@ -26,11 +26,34 @@ Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback
 
 1. Mostrar los puentes configurados en el sistema operativo.
 
-  Ejecutamos el siguiente código y como podemos comprobar mi pc no contiene puentes configurados.
+Para realizar este ejercicio instalamos el paquete brctl. Ejecutamos el siguiente código y como podemos 
+comprobar mi pc no contiene puentes configurados.
+  
+    "brctl show"
   
 [Captura Show](https://github.com/rafacruiz/IV/blob/master/T2Ej2.png)
 
 2. Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
 
+* En primer lugar creamos el puente:
+
+  "sudo brctl addr rafa"
+
+* Una vez creado el puente, creamos una nueva interfaz:
+
+  "ip addr show"
   
+[Captura Interfaz](https://github.com/rafacruiz/IV/blob/master/T2Ej2-1.png)
+
+* Para activar este puente lo añadimos a la interfaz eth0:
+
+  "sudo brctl addif rafa eth0"
+
+* Ya podemos comprobar que nuestro puente existe en nuestro pc:
+
+  "brctl show"
+  
+[Captura Puente existente](https://github.com/rafacruiz/IV/blob/master/T2Ej2-3.png)
+
+
 
