@@ -11,11 +11,15 @@
 
 2. Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.
 
-  Instalamos rinse y ejecutamos la siguiente orden: "sudo rinse --arch=amd64 --distribution fedora-core-8 --directory /home/jaulas/fedora"
+  Instalamos rinse y ejecutamos la siguiente orden: "sudo rinse --arch=amd64 --distribution fedora-core-6 --directory /home/jaulas/fedora"
   
   Cuando ejecuto la orden rinse me muestra este tipo de error. No he conseguido instalarlo.
   
     [Captura Instalación rinse](https://github.com/rafacruiz/IV/blob/master/t2-e3-2.png)
+    
+  Con la distribución 7 de fedora no ocurre este error. Me decido por fedora-core-7 para su instalación.
+  
+    "sudo rinse --arch=amd64 --distribution fedora-core-7 --directory /home/jaulas/fedora"
 
 ##Ejercicio 4
 
