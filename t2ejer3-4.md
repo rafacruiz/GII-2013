@@ -17,12 +17,14 @@
   
     [Captura Instalación rinse](https://github.com/rafacruiz/IV/blob/master/t2-e3-2.png)
     
-  Con la distribución 7 de fedora no ocurre este error. Me decido por fedora-core-7 para su instalación.
+  Con la distribución 8 de fedora no ocurre este error. Me decido por fedora-core-8 para su instalación.
   
-    "sudo rinse --arch=amd64 --distribution fedora-core-7 --directory /home/jaulas/fedora"
+    "sudo rinse --arch=amd64 --distribution fedora-core-8 --directory /home/jaulas/fedora"
+    
+    [Captura Instalación Fedora]()
 
 ##Ejercicio 4
 
 Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.
   
-  
+  Uso la máquina instalada en el ejercicio anterior.
