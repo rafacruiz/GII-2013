@@ -4,7 +4,7 @@
 
   Instalamos debootstrap y una vez terminada la instalación, ejecutamos:
   
-    "sudo debootstrap --arch=amd64 quantal /home/jaulas/quantal/	http://archive.ubuntu.com/ubuntu"
+    "sudo debootstrap --arch=i386 quantal /home/jaulas/quantal/	http://archive.ubuntu.com/ubuntu"
     
     [Captura Instalación debootstrap](https://github.com/rafacruiz/IV/blob/master/t2-e3.png)
 
@@ -19,12 +19,15 @@
     
   Con la distribución 8 de fedora no ocurre este error. Me decido por fedora-core-8 para su instalación.
   
-    "sudo rinse --arch=amd64 --distribution fedora-core-8 --directory /home/jaulas/fedora"
+    "sudo rinse --arch=i386 --distribution fedora-core-9 --directory /home/jaulas/fedora"
     
-    [Captura Instalación Fedora]()
+    [Captura Instalación Fedora](https://github.com/rafacruiz/IV/blob/master/rinse.png)
 
 ##Ejercicio 4
 
 Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.
   
-  Uso la máquina instalada en el ejercicio anterior.
+  Uso la máquina instalada en el ejercicio anterior. Montamos /proc como nos indica en los apuntes de clase.
+  
+    [Captura Montaje Top](https://github.com/rafacruiz/IV/blob/master/top.png)
+  
