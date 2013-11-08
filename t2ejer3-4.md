@@ -29,4 +29,4 @@ Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde t
   
   Uso la máquina instalada en el ejercicio anterior. Montamos /proc como nos indica en los apuntes de clase.
   
-    [Captura Montaje Top](https://github.com/rafacruiz/IV/blob/master/top.png)
+![Captura Montaje Top](https://dl.dropboxusercontent.com/s/0kv8krw437lcjzv/top.png)
