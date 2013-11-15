@@ -39,7 +39,13 @@ En este paso creamos un contenedor basado en la distribución debian. Aunque ubu
  Para instalar lxc-webpanel, seguimos los pasos de la página web: http://lxc-webpanel.github.io/install.html
 
  ![webpanel](https://dl.dropbox.com/s/9f0ia8xkyjwrio5/webpanel.png)
+ 
+ ![webpafun](https://dl.dropbox.com/s/cotogcvu4d4sdgs/webpfu.png)
 
 2. Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.
 
+ Una vez que estamos dentro de web panel, en el panel de la izquierda podemos elegir el contendor que queremos configurar y restringir los recursos.
+ Accedemos al contenedor miDebian.
+ 
+ ![miDebian](https://dl.dropbox.com/s/zz1o1n11iq2jsug/webdebian.png)
     
