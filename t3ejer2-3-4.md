@@ -60,7 +60,10 @@ En este paso creamos un contenedor basado en la distribución debian. Aunque ubu
  
   "ab -n 10000 -c 50  http://10.0.0.2/"
  
+ ![jaula](https://dl.dropbox.com/s/d53oz6t7khxuca1/jaulanginx.png)
+ 
  Y para nuestra máquina lazamos el siguiente comando:
  
   "ab -n 10000 -c 50  http://localhost/"
  
+ ![local](https://dl.dropbox.com/s/iif2qke8y9dg3j3/localeje5.png)
