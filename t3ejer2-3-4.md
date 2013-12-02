@@ -67,3 +67,6 @@ En este paso creamos un contenedor basado en la distribución debian. Aunque ubu
    "ab -n 10000 -c 50  http://localhost/"
  
  ![local](https://dl.dropbox.com/s/iif2qke8y9dg3j3/localeje5.png)
+ 
+ 
+ Se puede observar es mas rapido usar una jaula chroot que un contenedor que usa un puente a la interfaz de red.
