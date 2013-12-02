@@ -49,3 +49,18 @@ En este paso creamos un contenedor basado en la distribución debian. Aunque ubu
  
  ![miDebian](https://dl.dropbox.com/s/zz1o1n11iq2jsug/webdebian.png)
     
+
+#Ejercicio5
+
+1. Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.
+
+ Primero entramos en la jaula lxc-start -n una-caja, una vez dentro instalamos nginx. Con 'ab' realizamos una petición repetida al servidor. Asginamos mediante la inferfaz grafica de lxc-web-panel una dirección IP.
+ 
+ Realizamos la petición:
+ 
+  "ab -n 10000 -c 50  http://10.0.0.2/"
+ 
+ Y para nuestra máquina lazamos el siguiente comando:
+ 
+  "ab -n 10000 -c 50  http://localhost/"
+ 
