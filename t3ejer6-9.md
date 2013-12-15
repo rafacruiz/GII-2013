@@ -68,7 +68,7 @@
 
 3 - Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.
 
-  Realizamos un script con las ordenes que utilizmos anteriormente, debemos ejecutarlo con privilegios 'sudo'.
+  Realizamos un script (script_juju.sh) con las ordenes que utilizmos anteriormente, debemos ejecutarlo con privilegios 'sudo' y realizar con chmod el script en modo ejecutable.
   
     #!/bin/bash
     
@@ -83,4 +83,13 @@
 ##Ejercicio8
 Instalar libvirt. Te puede ayudar esta guía para Ubuntu.
   
-
+  Para instalar libvirt utilizamos apt,
+  
+    sudo apt-get install kvm libvirt-bin
+    
+  Es necesario agregar el usuario al grupo libvirtd, utilizando el siguiente comando,
+  
+    sudo adduser $USER libvirtd
+    
+##Ejercicio9
+Instalar un contenedor usando virt-install.
