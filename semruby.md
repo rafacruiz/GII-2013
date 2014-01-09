@@ -35,7 +35,7 @@ Crear un programa en Ruby que imprima los números desde el 1 hasta otro conteni
     $numeros = $numeros+1
   end
 ```
-![Captura Programa1]()
+![Captura Programa1](https://dl.dropbox.com/s/lo1nm2l3eyppgdf/ejer1ruby.png)
 
 #Ejercicio3
 ¿Se pueden crear estructuras de datos mixtas en Ruby? Crear un array de hashes de arrays e imprimirlo.
@@ -50,7 +50,7 @@ Sí, de la siguiente manera.
 
   puts estruc.inspect
 ```
-![Captura Programa2]()
+![Captura Programa2](https://dl.dropbox.com/s/4hgd3jxlpnvuuwm/ejer2ruby.png)
 
 #Ejercicio4
 Crear una serie de funciones instanciadas con un URL que devuelvan algún tipo de información sobre el mismo: fecha de última modificación, por ejemplo. Pista: esa información está en la cabecera HTTP que devuelve.
@@ -67,6 +67,8 @@ Crear una serie de funciones instanciadas con un URL que devuelvan algún tipo d
 
   puts out['date'].to_s
 ```
+![Captura Programa3](https://dl.dropbox.com/s/akqxxhtyamum77u/ejer3ruby.png)
+
 
 #Ejercicio5
 Ver si está disponible Vagrant como una gema de Ruby e instalarla.
