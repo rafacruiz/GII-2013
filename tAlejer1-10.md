@@ -27,6 +27,27 @@ Una vez dentro instalamos sshfs:
 Despues de estos pasos, miramos que dirección ip utiliza el contenedor. Antes tenemos que agregar el usuario a Fuse de tal modo:
   `sudo usermod -a -G fuse rafa`
   
+  ![CapIp](https://dl.dropbox.com/s/bwo03uhtrdfklug/almejer2.png)
+  
+Ahora creamos una carpeta en nuestr maquina local, a la cual queremos acceder:
+
+  `mkdir remoto`
+
+Ya podemos acceder a la carpeta local:
+
+  `sshfs ubuntu@10.10.10.2:/home/ubuntu /home/rafa/remoto`
+  
+#Ejercicio3
+Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre.
+
+Creamos una imagen con extensión .qcow2 utilizando quemu-img:
+
+  `qemu-img create -f qcow2 imagen.qcow2 30M`
+
+Para una imagen .img:
+
+  `qemu-img create unbuntu.img 30M`
+
 
 
   
