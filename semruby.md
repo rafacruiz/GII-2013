@@ -58,9 +58,9 @@ Crear una serie de funciones instanciadas con un URL que devuelvan algún tipo d
 ```
   #! /usr/bin/ruby
 
-  requiere 'net/http'
+  require 'net/http'
 
-  argumento = ARG[0]
+  argumento = ARGV[0]
 
   http = Net::HTTP.new(argumento, 80)
   out = http.request_head('/')
