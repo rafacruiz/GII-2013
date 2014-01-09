@@ -32,7 +32,7 @@ Crear un programa en Ruby que imprima los números desde el 1 hasta otro conteni
 
   while $numeros < $total
     puts ("#$numeros")
-    $numeros = $i+1
+    $numeros = $numeros+1
   end
 ```
 ![Captura Programa1]()
