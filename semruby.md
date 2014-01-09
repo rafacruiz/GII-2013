@@ -19,7 +19,7 @@ El siguiente paso sera instalar Ruby.
 Ejecutamos --version para comprobar nuestra versión y obtenemos el siguiente resultado.
 
   >> ruby --version
-  >> ruby 2.0.0p353 (2013-11-22 revision 43784) [x86_64-linux]
+  >> ruby 1.9.3p0 (2011-10-30 revision 33570) [i686-linux]
 
 #Ejercicio2
 Crear un programa en Ruby que imprima los números desde el 1 hasta otro contenido en una variable.
