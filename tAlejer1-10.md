@@ -46,7 +46,43 @@ Creamos una imagen con extensión .qcow2 utilizando quemu-img:
 
 Para una imagen .img:
 
-  `qemu-img create unbuntu.img 30M`
+  `qemu-img create -f raw imagen.img 30M`
+  
+Y para VMDK he utilizado la siguiente linea de ordenes:
+
+  `qemu-img create -f vmdk imagen.vmdk 30M`
+
+#Ejericio4
+Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema.
+
+Primero creamos dos imagenes utilizando quemu-img, visto en el ejercicio anterior:
+
+  `quemu-img create -f raw xfs.img 80M`
+  `quemu-img create -f raw btrfs.img 80M`
+  
+Ahora poder utilizar estas imagenes dentro de nuestro sistema, necesitamos convertirlas en dispositivos loop con losetup:
+
+  `sudo losetup -v -f xfs.img`
+  `sudo losetup -v -f btrfs.img`
+
+Cuando ya estan creados los dos dispositivos tenemos quedar formato, ya que no tienen formato alguno. Para ello utilizamos mkfs:
+
+  `sudo mkfs.xfs /dev/loop1`
+  `sudo mkfs.btrfs /dev/loop2`
+
+Y una vez que ambos dispositvos tienen formato, pueden ser montados en máquinas virtuales o cualquier otra cosa.
+
+#Ejercicio5
+Instalar ceph en tu sistema operativo.
+
+  Instalamos ceph con apt-get:
+    
+      `sudo apt-get install ceph-mds`
+
+
+
+
+
 
 
 
