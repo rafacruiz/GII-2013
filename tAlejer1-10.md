@@ -52,7 +52,7 @@ Y para VMDK he utilizado la siguiente linea de ordenes:
 
   `qemu-img create -f vmdk imagen.vmdk 30M`
 
-#Ejericio4
+#Ejercicio4
 Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema.
 
 Primero creamos dos imagenes utilizando quemu-img, visto en el ejercicio anterior:
@@ -77,7 +77,7 @@ Instalar ceph en tu sistema operativo.
 
   Instalamos ceph con apt-get:
     
-      `sudo apt-get install ceph-mds`
+  `sudo apt-get install ceph-mds`
 
 
 
