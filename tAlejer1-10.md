@@ -78,6 +78,53 @@ Instalar ceph en tu sistema operativo.
   Instalamos ceph con apt-get:
     
   `sudo apt-get install ceph-mds`
+  
+#Ejercicio6
+Crear un dispositivo ceph usando BTRFS o XFS.
+
+Creamos el directorio donde vamos almacenar la información de Ceph.
+
+  ![capdirec](https://dl.dropbox.com/s/q1no9rbqmfjibs3/eje6.png)
+
+A continuación creamos el fichero de configuración y creamos la imagen de Ceph.
+
+  ![capimg](https://dl.dropbox.com/s/a7ngc1f3w5wh9b9/ejer6-1.png)
+  
+Formateamos el sistema de ficheros.
+
+  ![capform](https://dl.dropbox.com/s/sb83im45gibzve9/ejer6-2.png)
+  
+Creamos el siguiente directorio.
+
+  ![capdic](https://dl.dropbox.com/s/tu9kce4sfs7z32i/ejer6-4.png)
+  
+Una vez realizados los pasos anteriores, iniciamos el demonio.
+
+  `sudo /etc/init.d/ceph -a start`
+  
+Y por ultimo lo montamos.
+
+  `sudo mount -t ceph rafa:/ /mnt/ceph`
+
+#Ejercicio7
+Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.
+
+Creamos el objeto como se indica en los apuntes, podemos ver con rados lspools el estado de los objetos.
+
+  `sudo rados mkpool esa-piscina`
+  
+Y la almacenamos con put.
+
+  `sudo rados put -p esa-piscina objeto imgpiscina.img`
+
+#Ejercicio8
+
+  
+
+
+  
+
+
 
 
 
