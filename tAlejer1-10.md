@@ -118,8 +118,46 @@ Y la almacenamos con put.
   `sudo rados put -p esa-piscina objeto imgpiscina.img`
 
 #Ejercicio8
+Tras crear la cuenta de Azure, instalar las herramientas de línea de órdenes (Command line interface, cli) del mismo y configurarlas con la cuenta Azure correspondiente.
+
+Accedemos a www.windowsazurepass.com y creamos una cuenta en Windows Azure. Una vez hecho esto instalamos node.js para ello debemos añadir un repositorio:
+
+```
+  sudo add-apt-repository ppa:chris-lea/node.js
+  sudo apt-get update
+  sudo apt-get install nodejs
+```
+
+  ![caprepo](https://dl.dropbox.com/s/bc0wle7cavzbtkk/ej8.png)
+
+Despues instalamos el modulo de azure-cli:
+
+  `sudo npm install -g azure-cli`
+  
+  ![cap](https://dl.dropbox.com/s/9pc5ompcvvhtoj8/eje8-1.png)
+  
+Una vez descargada la herramienta de linea de comando, nos bajamos el fichero .publishsettings que contiene información sobre la cuenta de usuario de la siguiente manera:
+
+  `azure account download`
+  
+  ![capcuenta](https://dl.dropbox.com/s/643g390gaeeciaa/ejer8-2.png)
+
+Cuando ya tenemos descargado el fichero tenemos que importarlo:
+
+ `azure account import...`
+
 
   
+Ahora ya podemos crear la cuenta de almacenamiento:
+
+
+
+  
+
+
+
+
+
 
 
   
