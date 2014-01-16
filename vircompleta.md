@@ -21,25 +21,27 @@ Instalamos Damn Small Linux en la imagen creada.
 
   `qemu-system-x86_64 -hda imagen.img -cdrom dsl-4.11.rc1.iso`
   
-  ![ImgInst]()
-
+  ![ImgInst](https://dl.dropbox.com/s/i79mirtlc03rdit/ejerdos-1.png)
+  
+  ![ImgInst](https://dl.dropbox.com/s/evwjewfxkwha4d4/ejerdos-2.png)
+  
 
 Como podemos comprobar, ejecutamos la máquina virtual y no se instala correctamente.
   
   `quemu-system-x86_64 -hda imagen.img -m 256 -boot c`
   
-  ![ImgPrue]()
+  ![ImgPrue](https://dl.dropbox.com/s/aph0pm5ixbzk2v6/ejerdos-3.png)
   
 
-Ahora instalamos Slitaz. Creamos una imagen y realizamos la ejecución al ser un livecd.
+Ahora probamos Slitaz. Creamos una imagen y realizamos la ejecución al ser un livecd.
 
   `qemu-img create -f qcow2 slitaz.img 200M`
   
-  ![ImgImagen]()
+  ![ImgImagen](https://dl.dropbox.com/s/0lqht0uorxkv951/ejerdos-4.png)
   
   `qemu-system-x86_64 -hda slitaz.img -cdrom slitaz-4.0.iso`
 
-  ![ImgInst]()
+  ![ImgInst](https://dl.dropbox.com/s/3owryoug4yg6gay/ejerdos-6.png)
   
   
 b. Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels.
