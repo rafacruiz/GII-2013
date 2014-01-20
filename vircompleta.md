@@ -102,7 +102,7 @@ Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a 
 Voy a utilizar una distribución Debian con un entorno gráfico LXDE para ello voy a utilizar qemu. Primero realizaremos la imagen donde trabajará y despues indicaremos que la imagen .iso arranque desde ella. Con la opción -m para crear la máquina con 512 megas. 
 
   `qemu-img create -f qcow2 disUbu.img 2G`
-  `qemu-system-x86_64 -hda imagen.img -cdrom ../../debian-7.3.0-i386-lxde-CD-1.iso -m 512M`
+  `qemu-system-x86_64 -hda disUbu.img -cdrom ../../debian-7.3.0-i386-lxde-CD-1.iso -m 512M`
 
   ![DedianQemu](https://dl.dropbox.com/s/ietj1vts8j0a6ho/ejer5debian.png)
   
@@ -126,6 +126,7 @@ Y con el comando `ssh -p 2222 debian@localhost` accedemos a nuestra máquina.
   
 ##Ejercicio5
 Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.
+
 
 ##Ejercicio7
 Instalar una máquina virtual Ubuntu 12.04 para el hipervisor que tengas instalado.
