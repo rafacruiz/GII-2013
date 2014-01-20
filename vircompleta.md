@@ -104,6 +104,12 @@ Voy a utilizar una distribución Debian con un entorno gráfico LXDE para ello v
   `qemu-img create -f qcow2 disUbu.img 2G`
   `qemu-system-x86_64 -hda imagen.img -cdrom ../../debian-7.3.0-i386-lxde-CD-1.iso -m 512M`
 
+Los pasos para la instalación de Debian son los mismo que hemos realizado en el ejercicio 2.b.
+
+  ![DedianQemu]()
+  
+  ![DedianQemu]()
+
 ##Ejercicio5
 Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.
 
