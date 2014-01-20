@@ -104,12 +104,28 @@ Voy a utilizar una distribución Debian con un entorno gráfico LXDE para ello v
   `qemu-img create -f qcow2 disUbu.img 2G`
   `qemu-system-x86_64 -hda imagen.img -cdrom ../../debian-7.3.0-i386-lxde-CD-1.iso -m 512M`
 
+  ![DedianQemu](https://dl.dropbox.com/s/ietj1vts8j0a6ho/ejer5debian.png)
+  
 Los pasos para la instalación de Debian son los mismo que hemos realizado en el ejercicio 2.b.
 
-  ![DedianQemu]()
+  ![DedianQemu](https://dl.dropbox.com/s/txih87fdo44egz7/ejer4debian.png)
+  
+  ![DedianQemu](https://dl.dropbox.com/s/kmthct2e4pk953s/ejer4debian1.png)
+  
+Para iniciar nuestra máquina virtual utilizamos el siguiente comando.
+
+  `qemu-system-x86_64 -boot order=c -drive file=disUbu.img,if=virtio`
+  
+  ![DedianQemu](https://dl.dropbox.com/s/62htz8gpi4uduav/ejer4debian.png)
+  
+Ahora tenemos que acceder mediante ssh, para ellos vamos a iniciar la vm con un nuevo parametro. Indicamos con -redir tcp:2222::22, para redirigir un puerto en el sistema anfitrión a un puerto en el sistema virtual.
+
+  `qemu-system-x86_64 -boot order=c -drive file=disUbu.img,if=virtio -redir tcp:2222::22`
   
   ![DedianQemu]()
-
+  
+Y con el comando `ssh -p 2222 debian@localhost` accedemos a nuestra máquina.
+  
 ##Ejercicio5
 Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.
 
