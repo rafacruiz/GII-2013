@@ -122,8 +122,6 @@ Ahora tenemos que acceder mediante ssh, para ellos vamos a iniciar la vm con un 
 
   `qemu-system-x86_64 -boot order=c -drive file=disUbu.img,if=virtio -redir tcp:2222::22`
   
-  ![DedianQemu]()
-  
 Y con el comando `ssh -p 2222 debian@localhost` accedemos a nuestra máquina.
   
 ##Ejercicio5
