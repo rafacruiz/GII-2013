@@ -99,6 +99,11 @@ Cuando termina la instalación, ya podemos acceder a nuestra distribución Debia
 ##Ejercicio4
 Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.
 
+Voy a utilizar una distribución Debian con un entorno gráfico LXDE para ello voy a utilizar qemu. Primero realizaremos la imagen donde trabajará y despues indicaremos que la imagen .iso arranque desde ella. Con la opción -m para crear la máquina con 512 megas. 
+
+  `qemu-img create -f qcow2 disUbu.img 2G`
+  `qemu-system-x86_64 -hda imagen.img -cdrom ../../debian-7.3.0-i386-lxde-CD-1.iso -m 512M`
+
 ##Ejercicio5
 Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.
 
