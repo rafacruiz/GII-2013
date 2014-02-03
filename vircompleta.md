@@ -131,3 +131,12 @@ Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para pode
 ##Ejercicio7
 Instalar una máquina virtual Ubuntu 12.04 para el hipervisor que tengas instalado.
 
+Instalamos los siguientes paquetes, usando el siguiente comando:
+
+  `sudo apt-get install ubuntu-vm-builder kvm virt-manager`
+  
+Ahora creamos la imagen:
+
+  `sudo vmbuilder kvm ubuntu --suite precise --flavour server -o --dest ~/InV  --hostname rafa --domain rafa`
+
+  
