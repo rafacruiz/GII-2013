@@ -139,4 +139,5 @@ Ahora creamos la imagen:
 
   `sudo vmbuilder kvm ubuntu --suite precise --flavour server -o --dest ~/InV  --hostname rafa --domain rafa`
 
+Despues de unos minutos, tenemos nuestra máquina virtual.
   
