@@ -2,13 +2,19 @@ Actualización de pedidos
 ========================
 
 Esta es una vista solamente para los trabajadores de la empresa. Desde aquí los diferentes trabajadores de las distintas secciones de la empresa, cambiaran el estado del pedido según donde este se encuentre.
+
 La apariencia de actualizar pedido es la siguiente:
 
 ![captura_update](https://dl.dropbox.com/s/5d6y6sm3rkraoh9/AcEs.jpg)
 
 Se trata de un simple formulario, con el cual pueden ir cambiando el estado del pedido. Para ello el pedido tiene que estar inicializado en la aplicación, esta operación se realiza desde la vista asignar pedido. 
 Solamente necesitamos indicar el número del pedido que queremos cambiar y el nuevo estado al que queremos pasar el pedido y pulsamos actualizar para que la acción se complete.
+
+Otra opción que contiene este apartado es la de enviar un correo electrónico, se puede ver en el código “.py”. Cuando el pedido pasa al estado completado, será enviado un correo al cliente indicado que su pedido está finalizado. 
+
 Se ha utilizado el siguiente código:
+
+Documento .py:
 
 ~~~~~~{.python}
 def actualizar_pedido(request):
@@ -49,4 +55,34 @@ def actualizar_pedido(request):
         args.update(csrf(request))
         args['form'] = form
         return render(request,'pedidos/index.html',args)
+~~~~~~
+
+Documento .html:
+
+Forma de mostrar un estado.
+
+~~~~~~{.html}
+<div class="panel-heading">
+	<a class="panel-title" data-toggle="collapse" data-parent="#panel-854654">Revisión</a>
+</div>
+	<div id="panel-element-590421" class="panel-collapse collapse in">
+	{% if lista_estado1 %}							
+	     
+	      {% for npe in lista_estado1 %}
+			<div class="panel-body">
+			    <b>Número Pedido:</b> {{ npe.num_pedido }}
+			    <b>Cliente:</b> {{ npe.usuario }}
+			    <b>Concepto:</b> {{ npe.concepto }}
+			    <b>Recepción:</b>{{ npe.forma_de_recepcion }}
+			</div>
+		{% endfor %}
+		
+	{% else %}
+		<div class="panel-body">
+			<p>No existen pedidos en este estado.</p></td>						
+		</div>
+	{% endif %}
+										
+	</div>
+</div>
 ~~~~~~
