@@ -98,11 +98,11 @@ Primero instalamos vagrant:
 
 Ahora miramos una distribución linux en la página de vagrant:
 
-Usaremos el siguiente enlace para obtener nuestra distribución, https://dl.dropboxusercontent.com/s/xymcvez85i29lym/vagrant-debian-wheezy64.box
+En el siguiente enlace obtenemos la distribución, https://dl.dropboxusercontent.com/s/xymcvez85i29lym/vagrant-debian-wheezy64.box
 
 Y de la siguiente manera instalamos la máquina:
 
-`vagrant box add Debian https://dl.dropboxusercontent.com/s/xymcvez85i29lym/vagrant-debian-wheezy64.box
+	vagrant box add Debian https://dl.dropboxusercontent.com/s/xymcvez85i29lym/vagrant-debian-wheezy64.bo
 
 ![captura vagrant](https://dl.dropbox.com/s/hielloc5zlub0r2/vagrant.png)
 
