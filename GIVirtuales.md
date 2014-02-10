@@ -89,13 +89,13 @@ tres:
         - 11
 ```
 
-##Ejercicio4
-Desplegar los fuentes de la aplicación de DAI o cualquier otra aplicación que se encuentre en un servidor git público en la máquina virtual Azure (o una máquina virtual local) usando ansible.
+##Ejercicio6
+Instalar una máquina virtual Debian usando Vagrant y conectar con ella.
 
-Instalamos ansible:
 
-`sudo pip install ansible`
+##Ejercicio7
 
+##Ejercicio8
 
 
 
